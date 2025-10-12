@@ -6,12 +6,12 @@ let col2Values = []
 let col3Values = []
 let col4Values = []
 
-let avarage0;
-let avarage1;
+let average0;
+let average1;
 let std1;
 let mode2;
 let median3;
-let avarage4;
+let average4;
 let std4;
 
 function preload() {
@@ -85,8 +85,6 @@ function calcMedian(arr) {
   }
 }
 
-
-
 function setup() {
   createCanvas(400, 400);
   // ciclo che si ripete su tutte le righe
@@ -110,6 +108,15 @@ col1Values = filteredRows.map(row=> Number(row.column1));
 col2Values = filteredRows.map(row=> Number(row.column2));
 col3Values = filteredRows.map(row=> Number(row.column3));
 col4Values = filteredRows.map(row=> Number(row.column4));
+
+// f01. calcolo media colonna 0
+average0 = calcAvg(col0Values);
+print("average col0:", average0);
+
+// disegnare il grafico di avg colonna 0
+drawAvarageCol0();
+
+// f02.
 }
 
 function draw() {
