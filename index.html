@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketch Responsive</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+<body>
+  <script src="sketch.js"></script>
 
-    <title>Sketch</title>
+  <main class="container">
+    <h1>LCG ASSIGNMENT 1</h1>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="flex-grid overlay">
+      <div class="box" id="box1"></div>
 
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-  </head>
+      <div class="box no-chart" id="box2">
+        <p>La <span class="bold">deviazione standard</span> della colonna 1 è<br>
+        <span class="bold">61.30601520242528</span></p>
+      </div>
 
-  <body>
-    <script src="sketch.js"></script>
-  </body>
+      <div class="box" id="box3"></div>
+
+      <div class="box no-chart" id="box4">
+        <p>La <span class="bold">mediana</span> della colonna 3 è<br>
+        <span class="bold">79.5</span></p>
+      </div>
+
+      <div class="box" id="box5"></div>
+
+      <div class="box no-chart" id="box6">
+        <p>La <span class="bold">deviazione standard</span> della colonna 4 è<br>
+        <span class="bold">58.34715074448795</span></p>
+      </div>
+    </div>
+  </main>
+</body>
 </html>
